@@ -1,0 +1,198 @@
+body {
+  background-color: #FFFFFF;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body header {
+  width: 100%;
+  background-color: #212947;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+body header .logo {
+  width: 36%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body header .logo a img {
+  width: 50px;
+  height: 45px;
+}
+
+body header .menu {
+  width: 55%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+body header .menu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 50%;
+}
+
+body header .menu ul li {
+  list-style: none;
+}
+
+body header .menu ul li a {
+  text-decoration: none;
+  font-family: 'Bree Serif', serif;
+  color: #eeecf5;
+}
+
+body header .menu ul li a:hover {
+  color: #919de8;
+}
+
+body main {
+  padding: 1%;
+}
+
+body main .titulo1 {
+  font-family: "Bree Serif";
+}
+
+body main .formularios_principales {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 420px;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body main .formularios_principales .contenedor_1 {
+  width: 40%;
+}
+
+body main .formularios_principales .contenedor_1 .form_salario {
+  border: 1px solid black;
+  border-radius: 30px;
+  padding: 10px;
+  width: 85%;
+  margin-bottom: 10px;
+}
+
+body main .formularios_principales .contenedor_1 .form_salario label {
+  font-family: 'Baloo Chettan 2', cursive;
+  font-weight: bold;
+}
+
+body main .formularios_principales .contenedor_1 .form_salario input {
+  width: 40%;
+}
+
+body main .formularios_principales .contenedor_1 .form_horas_ext {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  border: 1px solid black;
+  border-radius: 30px;
+  padding: 20px;
+  width: 80%;
+  margin-bottom: 10px;
+}
+
+body main .formularios_principales .contenedor_1 .form_horas_ext span {
+  margin-bottom: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+body main .formularios_principales .contenedor_1 .form_horas_ext span label {
+  font-family: 'Baloo Chettan 2', cursive;
+  font-weight: bold;
+}
+
+body main .formularios_principales .contenedor_1 .form_horas_ext span input {
+  width: 10%;
+  text-align: center;
+}
+
+body main .formularios_principales .contenedor_1 button {
+  width: 80%;
+  height: 40px;
+  margin: 0px 20px;
+  border-radius: 30px;
+  background-color: #212947;
+  color: white;
+  font-family: 'Baloo Chettan 2', cursive;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+body main .formularios_principales .contenedor_1 button:hover {
+  background-color: #2f395efb;
+}
+
+body main .formularios_principales .contenedor_2 {
+  width: 35%;
+  border: 1px solid black;
+  border-radius: 30px;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 300px;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+body main .formularios_principales .contenedor_2 span {
+  font-family: 'Baloo Chettan 2', cursive;
+}
+
+body main .formularios_principales .contenedor_2 span label {
+  font-weight: bold;
+}
+
+body main .formularios_principales .contenedor_2 span .color {
+  color: green;
+}
+/*# sourceMappingURL=style.css.map */

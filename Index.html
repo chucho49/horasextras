@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Chettan+2&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./main.js"></script>
+    <title>Calculadora De Horas Extras</title>
+</head>
+
+<body>
+<header>
+
+    <div class="logo">
+        <a href=""><img src="./Img/presupuesto.png" alt=""></a>
+    </div>
+
+    <nav class="menu">        
+            <ul>
+                <li><a href="">Inicio</a></li>
+                <li><a href="">Explicacion de horas extras</a></li>
+                <li><a href="">Ayuda</a></li>
+            </ul>
+        
+    </nav>
+</header>
+<main>
+    
+    <section class="formularios_principales">
+
+        <div class="contenedor_1">
+
+            <div class="form_salario">
+                <label for="">Escriba su salario:</label>
+                <input name="salario" id="salario" type="text" placeholder="Escriba su salario">
+            </div>
+
+
+            <div class="form_horas_ext">
+                
+                <span>
+                        <label for="1">Horas Diurnas Trabajadas:</label>
+                        <input id="hdiurnas" type="text" placeholder="0">
+                </span>
+                
+                <span>
+                        <label for="">Horas Extras Diurnas Trabajadas:</label>
+                        <input id="hediurnas" type="text" placeholder="0">
+                </span>
+                
+                <span>
+                        <label for="">Horas Nocturnas Trabajadas:</label>
+                        <input id="hnocturnas" type="text" placeholder="0">
+                </span>
+               
+                <span>
+                        <label for="">Horas Extras Nocturnas Trabajadas :</label>
+                        <input id="henocturnas" type="text" placeholder="0">
+                </span>
+                
+                <span>
+                        <label for="">Horas Diurnas Dominicales trabajadas:</label>
+                        <input id="hddominicales" type="text" placeholder="0">
+                </span>
+                
+                <span>
+                        <label for="">Horas Extras Diurnas Dominicales trabajadas:</label>
+                        <input id="heddominicales" type="text" placeholder="0">
+                </span>
+                
+                <span>
+                        <label for="">Horas Nocturnas Dominicales trabajadas:</label>
+                        <input id="hndominicales" type="text" placeholder="0">
+                </span>
+                
+                <span>
+                        <label for="">Horas Extras Nocturnas Dominicales trabajadas:</label>
+                        <input id="hendominicales" type="text" placeholder="0">
+                </span>
+                
+            </div>
+
+                <button type="button" onclick="capturaDeDatos()">Calcular</button>
+        </div>
+
+        <div class="contenedor_2">
+            
+                <span>
+                    <label for="1">Horas Diurnas Trabajadas:</label>
+                    <label class="color" id="ho_diurna_text" for="">$ 0</label>
+                </span>
+                
+                <span>
+                    <label for="">Horas Extras Diurnas Trabajadas:</label>
+                    <label class="color" id="ho_ex_diurna_text" for="">$ 0</label>
+                </span>
+                
+                <span>
+                    <label for="">Horas Nocturnas Trabajadas:</label>
+                    <label class="color" id="ho_noc_text" for="">$ 0</label>
+                </span>
+                
+                <span>
+                    <label for="">Horas Extras Nocturnas Trabajadas :</label>
+                    <label class="color" id="ho_ex_noc_text" for="">$ 0</label>
+                </span>
+                
+                <span>
+                    <label for="">Horas Diurnas Dominicales trabajadas:</label>
+                    <label class="color" id="ho_di_dominical_text" for="">$ 0</label>
+                </span>
+
+                <span>
+                    <label for="">Horas Extras Diurnas Dominicales trabajadas:</label>
+                    <label class="color" id="ho_ex_di_dominical_text" for="">$ 0</label>
+                </span>
+
+                <span>
+                    <label for="">Horas Nocturnas Dominicales trabajadas:</label>
+                    <label class="color" id="ho_noc_dominical_text" for="">$ 0</label>
+                </span>
+
+                <span>
+                    <label for="">Horas Extras Nocturnas Dominicales trabajadas:</label>
+                    <label class="color" id="Ho_ex_noc_dominical_text" for="">$ 0</label>
+                </span>
+
+                <span>
+    
+                    <label for="">Horas Total Realizadas:</label>
+                    <label class="color" id="valor_total_text" for="">$ 0</label>
+                    </span>
+            
+
+        </div>
+        
+       
+    </section>
+</main>    
+</body>
+
+</html>
