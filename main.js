@@ -3,8 +3,8 @@ function capturaDeDatos(){
      var salario=document.getElementById("salario").value;
      var hora=salario/240;
 
-     var hora_noc0=hora*0.35;
-     var hora_noc1=hora+hora_noc0;
+     
+     
 
      var ho_diurna=document.getElementById("hdiurnas").value;
      var ho_ex_diurna=document.getElementById("hediurnas").value;
@@ -25,8 +25,8 @@ function capturaDeDatos(){
         var ho_ex_diurna_total2= ho_ex_diurna*ho_ex_diurna_total1;
         /* */
 
-        /* Horas Nocturnas */
-        var ho_noc_total= hora_noc1*ho_noc;
+        /* Recargo Nocturno */
+        var ho_noc_total=ho_noc*(hora*0.35); 
         /* */
 
         /* Horas Extras Noctunas*/
@@ -45,8 +45,8 @@ function capturaDeDatos(){
         /* */
 
         /* Horas Noctunas Dominicales */
-        var ho_noc_dominical_total1=hora*2.1;
-        var ho_noc_dominical_total2=ho_noc_dominical_total1*ho_noc_dominical;
+        var ho_noc_dominical_total1=ho_noc_dominical*(hora*2.1);
+        
         /* */
 
         /* Horas Extras Nocturnas Dominicales*/
@@ -56,7 +56,7 @@ function capturaDeDatos(){
 
         /* */
 
-        var valor_total=ho_diurna_total+ho_ex_diurna_total2+ho_noc_total+ho_ex_noc_total2+ho_di_dominical_total2+ho_ex_di_dominical_total2+ho_noc_dominical_total2+Ho_ex_noc_dominical_total2+AuxTrans;
+        var valor_total=ho_diurna_total+ho_ex_diurna_total2+ho_noc_total+ho_ex_noc_total2+ho_di_dominical_total2+ho_ex_di_dominical_total2+ho_noc_dominical_total1+Ho_ex_noc_dominical_total2+AuxTrans;
 
         /* salud y pension */
 
@@ -82,7 +82,7 @@ function capturaDeDatos(){
         document.getElementById("ho_ex_noc_text").innerText=` $ `+ parseInt(ho_ex_noc_total2);
         document.getElementById("ho_di_dominical_text").innerText=` $ `+ parseInt(ho_di_dominical_total2);
         document.getElementById("ho_ex_di_dominical_text").innerText=` $ `+ parseInt(ho_ex_di_dominical_total2);
-        document.getElementById("ho_noc_dominical_text").innerText=` $ `+ parseInt(ho_noc_dominical_total2);
+        document.getElementById("ho_noc_dominical_text").innerText=` $ `+ parseInt(ho_noc_dominical_total1);
         document.getElementById("Ho_ex_noc_dominical_text").innerText=` $ `+ parseInt(Ho_ex_noc_dominical_total2);
         document.getElementById("valor_total_text").innerText=` $ `+ parseInt(valor_total2);
         document.getElementById("aux_Trans").innerText=` $ `+ parseInt(AuxTrans);
@@ -90,10 +90,6 @@ function capturaDeDatos(){
         document.getElementById("pension_").innerText=` $ - `+ parseInt(pension);
         
 }
-
-   
-                                       
-
 
 
 
